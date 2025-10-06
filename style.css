@@ -1,0 +1,45 @@
+a {
+      color: black;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      border-bottom: 2px solid grey;
+      margin: 0;
+      padding: 15px;
+    }
+
+    body {
+      background-image:url("background_2.gif");
+      background-size: cover;
+      font-family: Papyrus;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+    }
+
+
+    #grid ol {
+      width: 150px;
+      border-right: 2px solid grey;
+      margin: 0;
+      padding-left: 50px;
+      padding-top: 10px;
+    }
+
+    @media (max-width:700px) {
+      #grid{
+        display: block;
+      }
+        #grid ol{
+          
+          border-right:none
+        }
+      }
